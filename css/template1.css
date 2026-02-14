@@ -1,0 +1,81 @@
+.card-container{
+  margin-top: 20vh;
+}
+.card{
+  width:500px;
+}
+.grid-in-me{
+  margin-top: 100px;
+  margin-left: 10px;
+  margin-right:10px;
+  border:1px solid rgb(69, 136, 236);
+  animation: fadeup both;
+  animation-timeline: view();
+  animation-range:entry 40% cover 60%;
+}
+.button-container{
+  margin-top: 150px;
+}
+.boxes{
+  width:100%;
+  height:75px;
+  background-color: rgb(60, 124, 242);
+}
+#hello{
+  margin-top: 150px;
+}
+#helloworld{
+  margin-top: 150px;
+}
+#helloworld .boxes{
+  height:200px;
+}
+#one{
+  animation:fadeup both;
+  animation-timeline:view() ;
+  animation-range:entry 10% cover 30%;
+}
+#two{
+  animation:fadeup both;
+  animation-timeline:view() ;
+  animation-range:entry 30% cover 50%;
+}
+#three{
+  animation:fadeup both;
+  animation-timeline:view() ;
+  animation-range:entry 50% cover 70%;
+}
+#four{
+  animation:fadeup both;
+  animation-timeline:view() ;
+  animation-range:entry 70% cover 90%;
+}
+#helloworld{
+  animation:blurring both;
+  animation-timeline:view(10% 5%);
+
+}
+@keyframes fadeup {
+  from{
+    transform: translateY(40px) scale(0.5);
+    opacity:0
+  }
+  to{
+    transform: translate(0) scale(1);
+    opacity: 1;
+  }
+}
+@keyframes blurring{
+  from{
+    filter:staturate(0) contrast(4) blur(5px) brightness(5%) ;
+    translate:0 4em;
+    opacity: 0;
+    scale:0.95;
+  }
+  to{
+    filter:none;
+    scale:1;
+    translate:0 0s;
+    opacity:1;
+  }
+}
